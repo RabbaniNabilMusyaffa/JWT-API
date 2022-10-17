@@ -1,0 +1,157 @@
+	const requestPostFeed: Promise<ReactNode> | ReactNode = auth
+		?.requestFeed()
+		.then((res: any) => {
+			return (
+				<>
+					<div className="upload__content__post">
+						<div className="upload__content__post__preview">
+							<div className="upload__content__post__preview__container">
+								<div className="upload__content__post__preview__author">
+									<div
+										className="upload__content__post__preview__author__avatar"
+										style={{
+											background: `url("") center center / cover no-repeat`,
+										}}
+									></div>
+									<div className="upload__content__post__preview__author__body">
+										<div className="upload__content__post__preview__author__body__name">
+											Le Bukhari
+										</div>
+										<div className="upload__content__post__preview__author__body__username">
+											@andhikabukh
+										</div>
+									</div>
+								</div>
+
+								<div className="upload__content__post__preview__content">
+									<img
+										className="upload__content__post__preview__content-image"
+										src=""
+										alt=""
+									/>
+
+									<div className="upload__content__post__preview__content-action">
+										<div className="upload__content__post__preview__content-action__icon">
+											<HeartIcon />
+										</div>
+										<div className="upload__content__post__preview__content-action__wrapper">
+											<div className="upload__content__post__preview__content-action__icon">
+												<SendIcon />
+											</div>
+											<div className="upload__content__post__preview__content-action__icon">
+												<CommentIcon />
+											</div>
+											<div className="upload__content__post__preview__content-action__icon">
+												<StarIcon />
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div className="post__content-text">
+									<div className="post__content-text__likes">
+										<div className="post__content-text__likes-amount">
+											27
+										</div>
+										<div className="post__content-text__likes-text">
+											Likes
+										</div>
+									</div>
+
+									<div className="post__content-text__body">
+										Next Project is coming soon, stay tuned!
+									</div>
+
+									<div className="post__content-text__time">
+										2 Hours Ago
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</>
+			);
+		})
+		.catch((err: any) => {
+			return (
+				<div className="error">
+					<div className="error__body">
+						ERROR REQUESTING POST FEED
+					</div>
+				</div>
+			);
+		}) as Promise<ReactNode>;
+
+	const requestPostFeed2 = async () => {
+		const res = await auth?.requestFeed();
+		return (
+			<>
+				<div className="upload__content__post">
+					<div className="upload__content__post__preview">
+						<div className="upload__content__post__preview__container">
+							<div className="upload__content__post__preview__author">
+								<div
+									className="upload__content__post__preview__author__avatar"
+									style={{
+										background: `url("") center center / cover no-repeat`,
+									}}
+								></div>
+								<div className="upload__content__post__preview__author__body">
+									<div className="upload__content__post__preview__author__body__name">
+										Le Bukhari
+									</div>
+									<div className="upload__content__post__preview__author__body__username">
+										@andhikabukh
+									</div>
+								</div>
+							</div>
+
+							<div className="upload__content__post__preview__content">
+								<img
+									className="upload__content__post__preview__content-image"
+									src=""
+									alt=""
+								/>
+
+								<div className="upload__content__post__preview__content-action">
+									<div className="upload__content__post__preview__content-action__icon">
+										<HeartIcon />
+									</div>
+									<div className="upload__content__post__preview__content-action__wrapper">
+										<div className="upload__content__post__preview__content-action__icon">
+											<SendIcon />
+										</div>
+										<div className="upload__content__post__preview__content-action__icon">
+											<CommentIcon />
+										</div>
+										<div className="upload__content__post__preview__content-action__icon">
+											<StarIcon />
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className="post__content-text">
+								<div className="post__content-text__likes">
+									<div className="post__content-text__likes-amount">
+										27
+									</div>
+									<div className="post__content-text__likes-text">
+										Likes
+									</div>
+								</div>
+
+								<div className="post__content-text__body">
+									Next Project is coming soon, stay tuned!
+								</div>
+
+								<div className="post__content-text__time">
+									2 Hours Ago
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</>
+		);
+	};

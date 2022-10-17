@@ -1,0 +1,47 @@
+:root {
+	/* Color styles */
+	--primary-black: #0e101d;
+	--primary-grey: #191c32;
+	--primary-white: #ffffff;
+
+	--primary-purple: #776bf8;
+	--primary-dark-blue: #295adb;
+	--primary-blue: #0494fc;
+
+	--secondary-black: #131628;
+
+	--success: #16c79a;
+	--error: #f05454;
+	--warning: #ffc453;
+	--info: var(--primary-blue);
+
+	--opacity-success--25: #16c79a40;
+
+	--opacity-white--75: #ffffffbf;
+	--opacity-white--50: #ffffff80;
+	--opacity-white--25: #ffffff40;
+
+	--opacity-black--75: #0e101dbf;
+	--opacity-black--50: #0e101d80;
+
+	--opacity-secondary-black--75: #131628bf;
+	--opacity-secondary-black--50: #13162880;
+
+	--opacity-grey--75: #191c32bf;
+	--opacity-grey--50: #191c3280;
+
+	--opacity-white-blue--75: #b8e1ffbf;
+	--opacity-white-blue--50: #b8e1ff80;
+	--opacity-white-blue--25: #b8e1ff40;
+
+	--opacity-light-blue--75: #33a9ffbf;
+	--opacity-light-blue--50: #33a9ff80;
+	--opacity-light-blue--25: #33a9ff40;
+
+	/* Font Styles */
+	--font-size--large: 1.125rem;
+	--font-size--medium: 1rem;
+	--font-size--small: 0.875rem;
+	--font-size--tiny: 0.75rem;
+	--font-size--micro: 0.625rem;
+}

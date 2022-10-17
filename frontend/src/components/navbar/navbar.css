@@ -1,0 +1,124 @@
+@import url('../../styles/variables.css');
+
+.navbar__icon-wrapper {
+	--size: 40px;
+	min-width: var(--size);
+	min-height: var(--size);
+	max-width: var(--size);
+	max-height: var(--size);
+	padding: 8px;
+	display: flex;
+}
+
+.navbar__button {
+	--size: 40px;
+	min-width: var(--size);
+	min-height: var(--size);
+	max-width: var(--size);
+	max-height: var(--size);
+	padding: 8px;
+	display: flex;
+}
+
+/* ------------------------ Navbar Top ------------------------ */
+
+.navbar-top {
+	min-width: 100%;
+	min-height: 86px;
+	display: flex;
+	justify-content: center;
+
+	padding: 26px 20px 20px;
+	background: var(--primary-grey);
+	border-radius: 0 0 20px 20px;
+
+	transition: border-radius 0.3s ease-in-out;
+}
+
+.navbar-top__container {
+	min-width: 520px;
+	display: flex;
+	justify-content: space-between;
+
+	max-width: 520px;
+}
+@media (max-width: 560px) {
+	.navbar-top__container {
+		min-width: 100%;
+		max-width: 100%;
+	}
+}
+
+.navbar-top__wrapper {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	color: var(--primary-white);
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+/* ------------------------ Navbar Bottom ------------------------ */
+
+.navbar-bottom-container {
+	min-width: 100%;
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+
+	padding: 10px;
+	transition: all 0.5s ease;
+}
+@media (min-width: 560px) {
+	.navbar-bottom-container {
+		bottom: -100%;
+	}
+}
+
+.navbar-bottom {
+	min-width: 100%;
+	max-width: 100%;
+	display: flex;
+
+	padding: 15px 25px;
+	background: var(--secondary-black);
+	border-radius: 10px;
+}
+@supports (backdrop-filter: blur(10px)) {
+	.navbar-bottom {
+		background: var(--opacity-secondary-black--50);
+		backdrop-filter: blur(50px);
+	}
+}
+.navbar-bottom__container {
+	min-width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar-bottom__container .navbar__icon-wrapper {
+	--size: 42px;
+	padding: 5px;
+}
+
+/* ------------------------ Navbar Page ------------------------ */
+
+.navbar-page {
+	min-width: 100%;
+	display: flex;
+}
+
+.navbar-page__container {
+	min-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar-page__header {
+	font-size: 1.125rem;
+	font-weight: 600;
+	color: var(--primary-white);
+}

@@ -1,0 +1,39 @@
+@import url('../../styles/variables.css');
+
+.button {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 16px 0;
+	border-radius: 5px;
+	outline: 2px solid transparent;
+	transition: outline 300ms linear;
+
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.primary {
+	background: var(--primary-dark-blue);
+	color: var(--primary-white);
+}
+.primary:hover {
+	outline: 2px solid var(--primary-white);
+}
+
+.bold {
+	background: var(--primary-white);
+	color: var(--primary-black);
+}
+.bold:hover {
+	outline: 2px solid var(--primary-purple);
+}
+
+.optional {
+	background: var(--primary-grey);
+	color: var(--primary-white);
+}
+.optional:hover {
+	outline: 2px solid var(--primary-dark-blue);
+}
